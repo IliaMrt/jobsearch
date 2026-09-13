@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="320" viewBox="0 0 920 320" role="img" aria-label="CLI filter screenshot">
+  <rect width="920" height="320" rx="12" fill="#1e1e1e"/>
+  <rect x="0" y="0" width="920" height="36" rx="12" fill="#2d2d2d"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f56"/>
+  <circle cx="42" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="62" cy="18" r="6" fill="#27c93f"/>
+  <text x="90" y="23" fill="#aaaaaa" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">jobsearch-ts — filter / score</text>
+  <text x="24" y="80" fill="#d4d4d4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">
+    <tspan x="24" dy="0">raw=24  rejected=11  kept=13</tspan>
+    <tspan x="24" dy="30" fill="#4ec9b0">remote=9   hybrid=0   offline=0</tspan>
+    <tspan x="24" dy="36" fill="#ce9178">-&gt; output/shortlist.json</tspan>
+    <tspan x="24" dy="24" fill="#ce9178">-&gt; output/hybrid_shortlist.json</tspan>
+    <tspan x="24" dy="24" fill="#ce9178">-&gt; output/offline_shortlist.json</tspan>
+    <tspan x="24" dy="24" fill="#ce9178">-&gt; output/report.md</tspan>
+  </text>
+</svg>

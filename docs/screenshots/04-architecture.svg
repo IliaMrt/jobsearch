@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420" role="img" aria-label="Architecture diagram">
+  <rect width="920" height="420" rx="12" fill="#fafafa"/>
+  <text x="28" y="40" fill="#111" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">Architecture</text>
+
+  <!-- sources -->
+  <rect x="40" y="70" width="110" height="44" rx="8" fill="#e8f1ff" stroke="#3b6ea5"/>
+  <text x="95" y="97" text-anchor="middle" fill="#1a3a5c" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Arbeitnow</text>
+  <rect x="160" y="70" width="110" height="44" rx="8" fill="#e8f1ff" stroke="#3b6ea5"/>
+  <text x="215" y="97" text-anchor="middle" fill="#1a3a5c" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Jobsuche</text>
+  <rect x="280" y="70" width="110" height="44" rx="8" fill="#e8f1ff" stroke="#3b6ea5"/>
+  <text x="335" y="97" text-anchor="middle" fill="#1a3a5c" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Remotive</text>
+  <rect x="400" y="70" width="110" height="44" rx="8" fill="#e8f1ff" stroke="#3b6ea5"/>
+  <text x="455" y="97" text-anchor="middle" fill="#1a3a5c" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Jobicy</text>
+
+  <path d="M255 114 L255 150" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect x="160" y="150" width="190" height="48" rx="8" fill="#fff3e0" stroke="#c47a1a"/>
+  <text x="255" y="180" text-anchor="middle" fill="#5c3d0a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">raw_jobs.jsonl</text>
+
+  <path d="M255 198 L255 234" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="140" y="234" width="230" height="48" rx="8" fill="#e8f8ef" stroke="#2a7a4b"/>
+  <text x="255" y="264" text-anchor="middle" fill="#14532d" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">Rule filter + score + geo</text>
+
+  <path d="M180 282 L120 320" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M255 282 L255 320" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M330 282 L390 320" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="320" width="140" height="56" rx="8" fill="#f0f0f0" stroke="#555"/>
+  <text x="110" y="345" text-anchor="middle" fill="#222" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">remote</text>
+  <text x="110" y="364" text-anchor="middle" fill="#666" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">shortlist.json</text>
+
+  <rect x="200" y="320" width="140" height="56" rx="8" fill="#f0f0f0" stroke="#555"/>
+  <text x="270" y="345" text-anchor="middle" fill="#222" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">hybrid</text>
+  <text x="270" y="364" text-anchor="middle" fill="#666" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">≤ radius km</text>
+
+  <rect x="360" y="320" width="140" height="56" rx="8" fill="#f0f0f0" stroke="#555"/>
+  <text x="430" y="345" text-anchor="middle" fill="#222" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">offline</text>
+  <text x="430" y="364" text-anchor="middle" fill="#666" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">≤ radius km</text>
+
+  <path d="M110 376 L110 392 L620 392 L620 200 L560 200" stroke="#888" stroke-width="2" stroke-dasharray="6 4" fill="none" marker-end="url(#arrow)"/>
+  <rect x="560" y="160" width="300" height="80" rx="8" fill="#f3e8ff" stroke="#6b46c1"/>
+  <text x="710" y="195" text-anchor="middle" fill="#3b0764" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">OpenRouter (optional)</text>
+  <text x="710" y="218" text-anchor="middle" fill="#5b21b6" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">apply · stretch · skip</text>
+</svg>

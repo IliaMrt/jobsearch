@@ -1,0 +1,23 @@
+$ npm start -- --sources remotive,jobicy
+
+=== source: arbeitnow SKIPPED (--sources) ===
+=== source: jobsuche SKIPPED (--sources) ===
+=== source: remotive ===
+[remotive] search="nodejs"
+  -> api=16 kept=5
+[remotive] search="typescript"
+  -> api=16 kept=0
+[remotive] search="backend node"
+  -> api=16 kept=0
+=== source: jobicy ===
+[jobicy] tag="nodejs"
+  -> api=4 kept=2
+[jobicy] tag="typescript"
+  -> api=50 kept=10
+[jobicy] tag="backend"
+  -> api=50 kept=7
+by_source: {"remotive":5,"jobicy":19}
+collected=24 -> output/raw_jobs.jsonl
+raw=24 rejected=11 kept=13 remote=9 hybrid=0 offline=0 -> output/shortlist.json / ...
+
+$ # then open output/report.md

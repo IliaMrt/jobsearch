@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="440" viewBox="0 0 920 440" role="img" aria-label="Report markdown screenshot">
+  <rect width="920" height="440" rx="12" fill="#f7f7f5"/>
+  <rect x="0" y="0" width="920" height="40" fill="#ebebe8"/>
+  <text x="24" y="26" fill="#444" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="600">output/report.md</text>
+  <text x="28" y="78" fill="#111" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="700">Job search report</text>
+  <text x="28" y="118" fill="#333" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">
+    <tspan x="28" dy="0">• profile: Jordan Quill</tspan>
+    <tspan x="28" dy="24">• raw: 24 · rejected by rules: 11 · after rules: 13</tspan>
+    <tspan x="28" dy="24">• shortlist remote: 9 · strong matches: 5</tspan>
+  </text>
+  <text x="28" y="220" fill="#111" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700">Shortlist remote</text>
+  <text x="28" y="252" fill="#222" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">
+    <tspan x="28" dy="0"><tspan fill="#0b6e4f" font-weight="700">44</tspan>  Senior Backend Engineer @ Playson</tspan>
+    <tspan x="28" dy="28"><tspan fill="#0b6e4f" font-weight="700">36</tspan>  Backend Engineer – Platform @ Grafana Labs</tspan>
+    <tspan x="28" dy="28"><tspan fill="#0b6e4f" font-weight="700">36</tspan>  Backend Software Engineer @ Northflank</tspan>
+    <tspan x="28" dy="28"><tspan fill="#0b6e4f" font-weight="700">32</tspan>  Senior Backend Engineer – Gen AI @ Zartis</tspan>
+  </text>
+</svg>

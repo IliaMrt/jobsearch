@@ -1,0 +1,10 @@
+node_modules/
+dist/
+output/
+.env
+*.log
+.DS_Store
+
+# Personal overrides — never commit real search profile / location
+config.local.yaml
+profile.local.md

@@ -1,0 +1,130 @@
+[
+  {
+    "score": 44,
+    "work_track": "remote",
+    "needs_manual_review": true,
+    "title": "Senior Backend Engineer (Core Team)",
+    "company": "Playson",
+    "location": "Europe,  Ukraine",
+    "url": "https://jobicy.com/jobs/152752-senior-backend-engineer-core-team",
+    "source": "jobicy",
+    "reasons": [
+      "soft:senior_title",
+      "node+ts",
+      "title_backend"
+    ],
+    "soft_flags": [
+      "senior_title"
+    ],
+    "matched_stack_groups": {
+      "node": [
+        "node.js",
+        "nodejs"
+      ],
+      "typescript": [
+        "typescript",
+        " type script"
+      ]
+    }
+  },
+  {
+    "score": 36,
+    "work_track": "remote",
+    "needs_manual_review": false,
+    "title": "Backend Engineer - Platform - Stacks | UK | Remote",
+    "company": "Grafana Labs",
+    "location": "Germany,  Ireland,  Spain,  Sweden,  UK",
+    "url": "https://jobicy.com/jobs/152920-backend-engineer-platform-stacks-uk-remote",
+    "source": "jobicy",
+    "reasons": [
+      "node+ts",
+      "title_backend"
+    ],
+    "soft_flags": [],
+    "matched_stack_groups": {
+      "node": [
+        "node.js",
+        "nodejs"
+      ],
+      "typescript": [
+        "typescript",
+        " type script"
+      ]
+    }
+  },
+  {
+    "score": 36,
+    "work_track": "remote",
+    "needs_manual_review": false,
+    "title": "Backend Engineer - Platform - Stacks | Sweden | Remote",
+    "company": "Grafana Labs",
+    "location": "Germany,  Ireland,  Spain,  Sweden,  UK",
+    "url": "https://jobicy.com/jobs/152495-backend-engineer-platform-stacks-sweden-remote",
+    "source": "jobicy",
+    "reasons": [
+      "node+ts",
+      "title_backend"
+    ],
+    "soft_flags": [],
+    "matched_stack_groups": {
+      "node": [
+        "node.js",
+        "nodejs"
+      ],
+      "typescript": [
+        "typescript",
+        " type script"
+      ]
+    }
+  },
+  {
+    "score": 36,
+    "work_track": "remote",
+    "needs_manual_review": false,
+    "title": "Backend Engineer - Platform - Stacks | Spain | Remote",
+    "company": "Grafana Labs",
+    "location": "Germany,  Ireland,  Spain,  Sweden,  UK",
+    "url": "https://jobicy.com/jobs/152490-backend-engineer-platform-stacks-spain-remote",
+    "source": "jobicy",
+    "reasons": [
+      "node+ts",
+      "title_backend"
+    ],
+    "soft_flags": [],
+    "matched_stack_groups": {
+      "node": [
+        "node.js",
+        "nodejs"
+      ],
+      "typescript": [
+        "typescript",
+        " type script"
+      ]
+    }
+  },
+  {
+    "score": 36,
+    "work_track": "remote",
+    "needs_manual_review": false,
+    "title": "Backend Engineer - Platform - Stacks | Ireland | Remote",
+    "company": "Grafana Labs",
+    "location": "Germany,  Ireland,  Spain,  Sweden,  UK",
+    "url": "https://jobicy.com/jobs/151822-backend-engineer-platform-stacks-ireland-remote",
+    "source": "jobicy",
+    "reasons": [
+      "node+ts",
+      "title_backend"
+    ],
+    "soft_flags": [],
+    "matched_stack_groups": {
+      "node": [
+        "node.js",
+        "nodejs"
+      ],
+      "typescript": [
+        "typescript",
+        " type script"
+      ]
+    }
+  }
+]

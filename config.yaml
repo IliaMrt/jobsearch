@@ -1,0 +1,252 @@
+# PUBLIC EXAMPLE ONLY — fictional candidate for demos/CI.
+# Keep your real search profile in config.local.yaml (gitignored) or a private fork.
+
+profile:
+  name: "Jordan Quill"
+  title: "Backend Developer Node/TypeScript"
+  location_home: "Sample City, Germany"
+  level: "mid"
+  languages:
+    german: "example: working knowledge — tune in your private config"
+    english: "example: working knowledge — tune in your private config"
+  employment: festanstellung
+  work_format: remote_preferred_hybrid_radius
+  regions_ok:
+    - Germany
+    - Austria
+    - Switzerland
+    - Liechtenstein
+    - EU-remote
+  stack_core:
+    - Node.js
+    - TypeScript
+    - PostgreSQL
+    - Docker
+    - Jest
+  stack_ok:
+    - Nest.js
+    - MySQL
+    - RabbitMQ
+    - ClickHouse
+  stack_avoid_as_role:
+    - Frontend
+    - Lead/Staff/EM
+
+collect:
+  merge_with_existing: false
+  rate_limit:
+    pause_between_queries_sec: 8
+    pause_between_arbeitnow_pages_sec: 1.5
+    max_retries_on_429: 3
+    backoff_base_sec: 20
+    backoff_max_sec: 180
+    min_results_ratio: 0.25
+  arbeitnow: true
+  arbeitnow_max_pages: 2
+  arbeitnow_max_jobs: 120
+  arbeitnow_queries:
+    - nodejs
+    - typescript
+    - "backend node"
+  jobsuche:
+    enabled: true
+    location: "Deutschland"
+    pages: 2
+    size: 15
+    fetch_details: true
+    detail_pause_sec: 0.2
+    max_details: 80
+    queries:
+      - "Backend Node.js"
+      - "Backend TypeScript"
+      - "Backend Entwickler Node.js"
+      - "Softwareentwickler TypeScript"
+  remotive:
+    enabled: true
+    searches:
+      - nodejs
+      - typescript
+      - "backend node"
+  jobicy:
+    enabled: true
+    count: 50
+    tags:
+      - nodejs
+      - typescript
+      - backend
+
+filters:
+  # Node OR TypeScript (after text normalization). Nest is optional.
+  require_stack_groups:
+    node:
+      - node.js
+      - nodejs
+      - "node js"
+      - "node,"
+    typescript:
+      - typescript
+      - " type script"
+      - "ts/node"
+      - "node/ts"
+      - "node.ts"
+  require_mode: any_group
+  max_years_hard: 4
+
+  prefer_any:
+    - backend
+    - back-end
+    - back end
+    - "api engineer"
+    - nestjs
+    - nest.js
+    - postgresql
+    - postgres
+    - clickhouse
+    - rabbitmq
+    - docker
+    - jest
+
+  reject_any:
+    - fullstack
+    - full-stack
+    - full stack
+    - front-end
+    - frontend
+    - front end
+    - react native
+    - hybrid
+    - hybride
+    - teilhybrid
+    - "days in the office"
+    - "days per week in"
+    - "tage im büro"
+    - "tage pro woche im büro"
+    - "on-site only"
+    - "relocation to"
+
+  soft_reject_any:
+    - "fluent english"
+    - "excellent english"
+    - "native english"
+    - "english c1"
+    - "c1 english"
+    - "strong english"
+    - "proficient in english"
+    - "business fluent english"
+    - "verhandlungssicheres englisch"
+    - "sehr gute englischkenntnisse"
+    - "fließendes englisch"
+    - "english as a working language"
+    - "working language is english"
+    - "english-speaking team"
+    - "english b2"
+    - "gute englischkenntnisse"
+    - "office days"
+    - "begegnungen im büro"
+    - "5+ years"
+    - "5+ jahre"
+    - "6+ years"
+    - "7+ years"
+    - "8+ years"
+
+  require_remote_signals:
+    - remote
+    - "100% remote"
+    - "fully remote"
+    - "full remote"
+    - remote-first
+    - remote first
+    - deutschlandweit remote
+    - "home office 100"
+    - homeoffice 100
+    - "vollständig remote"
+    - "voll remote"
+    - "arbeiten von überall"
+
+  reject_freelance_signals:
+    - freelance
+    - freiberufl
+    - freiberuflich
+    - contractor
+    - "self-employed"
+    - selbstständig
+    - freelancermap
+    - personentage
+
+scoring:
+  weights:
+    prefer_hit: 6
+    both_node_and_ts: 10
+    nest_bonus: 3
+    sql_bonus: 4
+    clickhouse_bonus: 8
+    rabbitmq_bonus: 3
+    docker_bonus: 2
+    german_jd_bonus: 8
+    title_backend_bonus: 8
+    junior_mid_bonus: 6
+    soft_reject_penalty: -10
+    senior_years_penalty: -6
+    senior_title_penalty: -4
+    fullstack_soft_penalty: -3
+    hybrid_ok_city_penalty: -4
+    offline_local_bonus: 4
+    missing_remote_explicit: -5
+  shortlist_min_score: 14
+  review_min_score: 22
+  sql_signals:
+    - sql
+    - postgresql
+    - postgres
+    - mysql
+    - mariadb
+  clickhouse_signals:
+    - clickhouse
+  rabbitmq_signals:
+    - rabbitmq
+    - "rabbit mq"
+  docker_signals:
+    - docker
+  nest_signals:
+    - nestjs
+    - nest.js
+    - "nest js"
+  german_signals:
+    - "m/w/d"
+    - "deutschkenntnisse"
+    - "gute deutschkenntnisse"
+    - festanstellung
+    - homeoffice
+
+output:
+  dir: output
+  raw: raw_jobs.jsonl
+  filtered: filtered_jobs.jsonl
+  shortlist: shortlist.json
+  hybrid_shortlist: hybrid_shortlist.json
+  offline_shortlist: offline_shortlist.json
+  report: report.md
+  collect_stats: collect_stats.json
+
+# Home base for hybrid / offline shortlists (illustrative coords, not a real address)
+geo:
+  home_label: Sample City
+  home_lat: 51.3397
+  home_lon: 12.3731
+  hybrid_radius_km: 200
+  offline_radius_km: 50
+
+# After rule filter: cheap model via OpenRouter
+ai_review:
+  enabled: true
+  model: "openai/gpt-4o-mini"
+  max_jobs: 30
+  min_heuristic_score: 0
+  temperature: 0.1
+  max_desc_chars: 6000
+  pause_sec: 0.35
+  keep_verdicts:
+    - apply
+    - stretch
+  output: ai_shortlist.json
+  output_all: ai_reviews.json
